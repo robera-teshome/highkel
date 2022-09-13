@@ -1,0 +1,118 @@
+{% extends 'layouts/master.html' %}
+{% block content %}
+{% load static %}
+
+
+       <!-- Content Wrapper Start -->
+       <div class="content-wrapper">
+
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap bg-f br-2">
+            <div class="container">
+                <div class="breadcrumb-title">
+                    <h2>Portfolio</h2>
+                    <ul class="breadcrumb-menu list-style">
+                        <li><a href="index.html">Home </a></li>
+                        <li>Portfolio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+
+        <!-- Portfolio Section Start -->
+        <section class="portfolio-wrap ptb-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="portfolio-card style1">
+                            <img src="{% static 'img/portfolio/portfolio-1.jpg' %}" alt="Image">
+                            <div class="portfolio-info">
+                                <a href="portfolio-category.html" class="portfolio-cat">Cardiology</a>
+                                <h3><a href="portfolio-details.html">Cardio Surgery</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="portfolio-card style1">
+                            <img src="{% static 'img/portfolio/portfolio-2.jpg' %}" alt="Image">
+                            <div class="portfolio-info">
+                                <a href="portfolio-category.html" class="portfolio-cat">Eye Care</a>
+                                <h3><a href="portfolio-details.html">Retina Checkup</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="portfolio-card style1">
+                            <img src="{% static 'img/portfolio/portfolio-3.jpg' %}" alt="Image">
+                            <div class="portfolio-info">
+                                <a href="portfolio-category.html" class="portfolio-cat">Surgery</a>
+                                <h3><a href="portfolio-details.html">Neuro Surgery</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="portfolio-card style1">
+                            <img src="{% static 'img/portfolio/portfolio-4.jpg' %}" alt="Image">
+                            <div class="portfolio-info">
+                                <a href="portfolio-category.html" class="portfolio-cat">Dental</a>
+                                <h3><a href="portfolio-details.html">Root Canal</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="portfolio-card style1">
+                            <img src="{% static 'img/portfolio/portfolio-9.jpg' %}" alt="Image">
+                            <div class="portfolio-info">
+                                <a href="portfolio-category.html" class="portfolio-cat">Health</a>
+                                <h3><a href="portfolio-details.html">Child Care</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="portfolio-card style1">
+                            <img src="{% static 'img/portfolio/portfolio-10.jpg' %}" alt="Image">
+                            <div class="portfolio-info">
+                                <a href="portfolio-category.html" class="portfolio-cat">Family</a>
+                                <h3><a href="portfolio-details.html">Adult Health</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="portfolio-card style1">
+                            <img src="{% static 'img/portfolio/portfolio-11.jpg' %}" alt="Image">
+                            <div class="portfolio-info">
+                                <a href="portfolio-category.html" class="portfolio-cat">Dental</a>
+                                <h3><a href="portfolio-details.html">Dental Checkup</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="portfolio-card style1">
+                            <img src="{% static 'img/portfolio/portfolio-12.jpg' %}" alt="Image">
+                            <div class="portfolio-info">
+                                <a href="portfolio-category.html" class="portfolio-cat">Neuro</a>
+                                <h3><a href="portfolio-details.html">Neuro Surgery</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="portfolio-card style1">
+                            <img src="{% static 'img/portfolio/portfolio-13.jpg' %}" alt="Image">
+                            <div class="portfolio-info">
+                                <a href="portfolio-category.html" class="portfolio-cat">COVID-19</a>
+                                <h3><a href="portfolio-details.html">Covid Test</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-10">
+                    <a href="portfolio.html" class="btn style1">Load More</a>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section End -->
+
+    </div>
+    <!-- Content wrapper end -->
+{% endblock %}
