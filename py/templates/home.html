@@ -2,16 +2,19 @@
 {% block content %}
 {% load static %}
             <!-- Hero Section Start -->
+            
             <section class="hero-wrap style1">
                 <div class="hero-slider-one owl-carousel">
+                    
+                    {% for slider in home_slide %}
                     <div class="hero-slide-item">
                         <div class="container">
                             <div class="row align-items-center gx-5">
                                 <div class="col-xl-5 col-lg-6">
                                     <div class="hero-content">
-                                        <span>We Take Care Of Your Health</span>
-                                        <h1>We Are Providing Best &amp; Affordable Health Care</h1>
-                                        <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old richer.</p>
+                                        <span>{{ slider.title }}</span>
+                                        <h1>{{ slider.slogone }}</h1>
+                                        <p>{{ slider.discriptions }}</p>
                                         <div class="hero-btn">
                                             <a href="about.html" class="btn style1">Find Out More</a>
                                             <a href="service-one.html" class="btn style3">Our Services</a>
@@ -20,22 +23,22 @@
                                 </div>
                                 <div class="col-xl-7 col-lg-6">
                                     <div class="hero-img-wrap">
-                                        <img class="hero-img" src="{% static 'img/hero/hero-img-1.jpg' %}" alt="Image">
-                                        <img src="{% static 'img/hero/hero-shape-1.png' %}" alt="Image" class="hero-shape-one moveHorizontal">
-                                        <img src="{% static 'img/hero/hero-shape-2.png' %}" alt="Image" class="hero-shape-two rotate">
+                                        <img class="hero-img" src="{{ slider.image.url  }}" alt="Image">
+                                        <img src="" alt="Image" class="hero-shape-one moveHorizontal">
+                                        <img src="}" alt="Image" class="hero-shape-two rotate">
                                         <div class="row promo-box-wrap">
                                             <div class="col-xl-5 col-lg-7 col-md-5">
                                                 <div class="promo-box">
                                                     <span><i class="flaticon-support"></i></span>
-                                                    <h4>24/7 Support</h4>
-                                                    <p>There are many variations of passages are valid.</p>
+                                                    <h4>{{ slider.list_title }}</h4>
+                                                    <p>{{ slider.lift_discription }}</p>
                                                 </div>
                                             </div>
                                             <div class="col-xl-5 col-lg-7 col-md-5">
                                                 <div class="promo-box">
                                                     <span><i class="flaticon-aid-man"></i></span>
-                                                    <h4>Qualified Doctors</h4>
-                                                    <p>There are many variations of passages are valid.</p>
+                                                    <h4>{{ slider.right_title }}</h4>
+                                                    <p>{{ slider.ritht_discription }}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -44,88 +47,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero-slide-item">
-                        <div class="container">
-                            <div class="row align-items-center gx-5">
-                                <div class="col-xl-5 col-lg-6">
-                                    <div class="hero-content">
-                                        <span>24/7 Call Support</span>
-                                        <h1>Join Us Forever To Get Help From Anywhere</h1>
-                                        <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old richer.</p>
-                                        <div class="hero-btn">
-                                            <a href="about.html" class="btn style1">Find Out More</a>
-                                            <a href="service-one.html" class="btn style3">Our Services</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 col-lg-6">
-                                    <div class="hero-img-wrap">
-                                        <img class="hero-img" src="{% static 'img/hero/hero-img-8.jpg' %}" alt="Image">
-                                        <img src="{% static 'img/hero/hero-shape-1.png' %}" alt="Image" class="hero-shape-one moveHorizontal">
-                                        <img src="{% static 'img/hero/hero-shape-2.png' %}" alt="Image" class="hero-shape-two rotate">
-                                        <div class="row promo-box-wrap">
-                                            <div class="col-xl-5 col-lg-7 col-md-5">
-                                                <div class="promo-box">
-                                                    <span><i class="flaticon-support"></i></span>
-                                                    <h4>24/7 Support</h4>
-                                                    <p>There are many variations of passages are valid.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-5 col-lg-7 col-md-5">
-                                                <div class="promo-box">
-                                                    <span><i class="flaticon-aid-man"></i></span>
-                                                    <h4>Qualified Doctors</h4>
-                                                    <p>There are many variations of passages are valid.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero-slide-item">
-                        <div class="container">
-                            <div class="row align-items-center gx-5">
-                                <div class="col-xl-5 col-lg-6">
-                                    <div class="hero-content">
-                                        <span>Telemedicine Help</span>
-                                        <h1>Most Complete Health Solution In Your Hands</h1>
-                                        <p>Ontrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old richer.</p>
-                                        <div class="hero-btn">
-                                            <a href="about.html" class="btn style1">Find Out More</a>
-                                            <a href="service-one.html" class="btn style3">Our Services</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 col-lg-6">
-                                    <div class="hero-img-wrap">
-                                        <img class="hero-img" src="{% static 'img/hero/hero-img-9.jpg' %}" alt="Image">
-                                        <img src="{% static 'img/hero/hero-shape-1.png' %}" alt="Image" class="hero-shape-one moveHorizontal">
-                                        <img src="{% static 'img/hero/hero-shape-2.png' %}" alt="Image" class="hero-shape-two rotate">
-                                        <div class="row promo-box-wrap">
-                                            <div class="col-xl-5 col-lg-7 col-md-5">
-                                                <div class="promo-box">
-                                                    <span><i class="flaticon-support"></i></span>
-                                                    <h4>24/7 Support</h4>
-                                                    <p>There are many variations of passages are valid.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-5 col-lg-7 col-md-5">
-                                                <div class="promo-box">
-                                                    <span><i class="flaticon-aid-man"></i></span>
-                                                    <h4>Qualified Doctors</h4>
-                                                    <p>There are many variations of passages are valid.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   {% endfor %}
+
                 </div>
             </section>
+           
             <!-- Hero Section End -->
 
             <!-- Counter Section Start -->

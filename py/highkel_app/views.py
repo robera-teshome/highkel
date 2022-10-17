@@ -1,9 +1,20 @@
+from multiprocessing import context
 from django.shortcuts import render
+
+from .models import Hader,slider
 
 # Create your views here.
 
 def home(request):
-	return render(request,'home.html')
+	img = Hader.objects.all()
+	home_slide = slider.objects.all()
+
+	context ={
+		'img':img,
+		'home_slide': home_slide
+	}
+
+	return render(request,'home.html', context)
 	
 def about(request):
 	return render(request,'about.html')
